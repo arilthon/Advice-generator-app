@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* Color primary */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  /* Color secund */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {  
+  display: grid;
+  height: 100vh;
+  grid-template-columns: auto;  
+  font-size: 1.6rem;  
+  background: var(--Dark-Blue);
+  place-content: center;
+}
+.container{
+  display: grid;
+  gap: 4rem;
+  padding: 4rem;
+  max-width: 54.0rem;  
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 1.8rem;
+  margin: 1rem;  
+  justify-items: center;
+  position: relative;
+}
+
+p {
+  color: var(--Neon-Green);  
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;  
+  color: var(--Light-Cyan);
+  text-align: center;
+  padding: 0 5rem;
+  padding-top: 2rem;
+}
+
+
+a {
+  width: 4rem;
+  height: 4rem;
+  background: var(--Neon-Green)
+}
+
+button {
+  padding: 2rem;
+  border-radius: 50%;
+  background: var(--Neon-Green);
+  position: absolute;
+  bottom: -3.5rem;
+  cursor: pointer;
+  transition:ease-out 0.3s;
+  border: none;
+}
+
+button:hover {
+  box-shadow:0px 0px 30px 0px hsl(150, 100%, 66%);
+}
+
+picture img {
+  max-width: 100%;
+  padding-bottom: 3.5rem;
+}
